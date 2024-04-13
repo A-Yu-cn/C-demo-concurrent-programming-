@@ -5,7 +5,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/output)
 file(GLOB SRC_FILES "*.cpp")
 
 # 创建可执行文件
-add_executable(hellw_world ${SRC_FILES})
+add_executable(basic_control ${SRC_FILES})
 
 # 将可执行文件链接到公共库
 # target_link_libraries(subdir3_executable YourPublicLibraryName)

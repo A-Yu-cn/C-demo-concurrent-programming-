@@ -1,10 +1,10 @@
-#include<iostream>
-#include<thread>
+#include <iostream>
+#include <thread>
 void hello(){
-    std::cout<<"Hello Concurrent World!"<<std::endl;
+    std::cout << "Hello Concurrent World!" << std::endl;
 }
 int main(){
-    std::thread t(hello);
-    t.join();
+    std::thread t(hello); // 声明一个线程，传递其要调用的函数
+    t.join();             // 声明等待其完成才返回，若不等待则可能效果不正常
     return 0;
 }
